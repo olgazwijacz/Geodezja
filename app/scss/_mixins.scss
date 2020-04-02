@@ -1,0 +1,31 @@
+@mixin button {
+    text-decoration: none;
+    color: $secondary-color;
+    background-color: $strong-color-scheme;
+    padding: 10px 50px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 40px;
+   
+}
+@mixin title{
+    font-size: 1.8em;
+    color: $tetrairy-color;
+}
+@mixin hrka{
+    
+    width: 315px;
+    border:none;
+    height: 35px;
+    border-bottom: 2.5px solid #41ad16;
+    box-shadow: 0 10px 10px -10px rgb(168, 168, 168);
+}
+@mixin arrow{
+    position: absolute;
+    bottom: 3%;
+    left:0;
+    right:0;
+    margin-right: auto;
+    margin-left:auto;
+    z-index: 10;
+}

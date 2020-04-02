@@ -1,0 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arimo", sans-serif;
+  text-decoration: none; }
+
+html {
+  font-size: 16px; }
+  html header nav {
+    min-height: 120px;
+    font-size: 1.2em;
+    padding: 0.5% 5%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    z-index: 2; }
+    html header nav .logo-lg {
+      width: 207px;
+      height: 119px; }
+    html header nav .logo-sm {
+      display: none; }
+    html header nav .hamburger-menu {
+      display: none; }
+    html header nav ul {
+      list-style-type: none;
+      padding-top: 60px; }
+      html header nav ul li {
+        display: inline-block;
+        padding-right: 50px; }
+        html header nav ul li a {
+          color: #707070; }
+          html header nav ul li a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #44C147;
+            transition: width .3s; }
+          html header nav ul li a:hover {
+            color: #d1d1d1;
+            transition: .2s ease; }
+            html header nav ul li a:hover::after {
+              width: 100%;
+              transition: width .3s; }
+        html header nav ul li .fa-search {
+          color: #1F67AD;
+          padding-left: 60px; }
+  html header .baner {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    color: #fdfffe;
+    font-family: "News Cycle", sans-serif;
+    position: relative;
+    overflow: hidden; }
+    html header .baner .arrow {
+      position: absolute;
+      bottom: 3%;
+      left: 0;
+      right: 0;
+      margin-right: auto;
+      margin-left: auto;
+      z-index: 10; }
+    html header .baner .shape {
+      display: inline-block;
+      position: absolute;
+      right: -108px;
+      top: -170px;
+      z-index: 1; }
+    html header .baner .left {
+      font-size: 1.2em;
+      background: url("../images/agriculture.png") no-repeat;
+      background-size: cover;
+      flex-basis: 50%;
+      text-align: center; }
+      html header .baner .left .content {
+        min-width: 400px;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 35% 5%; }
+        html header .baner .left .content p {
+          font-weight: 400;
+          line-height: 30px;
+          letter-spacing: 2px; }
+        html header .baner .left .content .button {
+          text-decoration: none;
+          color: #fdfffe;
+          background-color: #1F67AD;
+          padding: 10px 50px;
+          border-radius: 4px;
+          display: inline-block;
+          margin-top: 40px; }
+    html header .baner .right {
+      background: url("../images/ge.png") no-repeat;
+      background-size: cover;
+      flex-basis: 50%; }
+      html header .baner .right .fast-contact {
+        position: absolute;
+        right: 30px;
+        top: 25px;
+        z-index: 5;
+        display: flex;
+        flex-direction: column; }
+        html header .baner .right .fast-contact .phone, html header .baner .right .fast-contact .mail {
+          display: flex;
+          flex-direction: row;
+          line-height: 40px; }
+          html header .baner .right .fast-contact .phone a, html header .baner .right .fast-contact .mail a {
+            color: #fdfffe; }
+          html header .baner .right .fast-contact .phone .fas, html header .baner .right .fast-contact .phone .far, html header .baner .right .fast-contact .mail .fas, html header .baner .right .fast-contact .mail .far {
+            padding-right: 15px;
+            padding-top: 8px;
+            font-size: 1.6em; }
+      html header .baner .right .container {
+        padding: 35% 7%; }
+        html header .baner .right .container h1 {
+          font-size: 2.7em;
+          font-family: "News Cycle", sans-serif;
+          font-weight: 700;
+          line-height: 70px;
+          letter-spacing: 2px; }
+  @media screen and (max-width: 1440px) {
+    html header nav ul li {
+      padding-left: 45px;
+      padding-right: 0; }
+      html header nav ul li .fa-search {
+        padding-right: 0px; }
+    html header .baner .shape {
+      right: -140px;
+      top: -200px; }
+    html header .baner .right .fast-contact {
+      right: 15px;
+      top: 30px; }
+      html header .baner .right .fast-contact .phone, html header .baner .right .fast-contact .mail {
+        font-size: 1em;
+        line-height: 1.3em; }
+        html header .baner .right .fast-contact .phone .fas, html header .baner .right .fast-contact .phone .far, html header .baner .right .fast-contact .mail .fas, html header .baner .right .fast-contact .mail .far {
+          padding-top: 4px;
+          font-size: 1em; } }
+  @media screen and (max-width: 1280px) {
+    html header nav {
+      padding-top: 5px; }
+      html header nav .logo-lg {
+        transform: scale(0.8); }
+      html header nav ul {
+        font-size: 0.95em; }
+        html header nav ul li {
+          padding-left: 35px;
+          padding-right: 0; }
+          html header nav ul li .fa-search {
+            padding-left: 30px;
+            font-size: 1em; } }
+  @media only screen and (max-width: 992px) {
+    html header nav .logo-lg {
+      display: none; }
+    html header nav .logo-sm {
+      display: block;
+      margin-top: 3%;
+      margin-bottom: 1%;
+      width: 50px;
+      height: 78px; }
+    html header nav ul {
+      font-size: 0.95em; }
+      html header nav ul li {
+        padding-left: 35px;
+        padding-right: 0; }
+        html header nav ul li .fa-search {
+          padding-left: 30px;
+          font-size: 1em; } }
+  html .oferta {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; }
+    html .oferta .arrow2 {
+      position: absolute;
+      bottom: 4%;
+      right: 10%;
+      z-index: 10; }
+    html .oferta .upper-lvl {
+      position: absolute;
+      top: -110px;
+      right: -850px;
+      width: 1491px;
+      height: 768px;
+      opacity: 0.3;
+      transform: scale(0.8);
+      z-index: -5; }
+    html .oferta .side-lvl {
+      position: absolute;
+      left: -350px;
+      top: 0;
+      width: 897px;
+      height: 994px;
+      opacity: 0.3;
+      transform: scale(0.94) rotate(-140deg); }
+    html .oferta .tytul {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 75px;
+      margin-bottom: 40px;
+      padding-left: 140px; }
+      html .oferta .tytul h2 {
+        font-size: 1.8em;
+        color: #707070;
+        text-transform: uppercase; }
+      html .oferta .tytul hr {
+        width: 315px;
+        border: none;
+        height: 35px;
+        border-bottom: 2.5px solid #41ad16;
+        box-shadow: 0 10px 10px -10px #a8a8a8; }
+    html .oferta .uslugi {
+      width: 70%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center; }
+      html .oferta .uslugi .box {
+        position: relative;
+        margin: 40px 40px;
+        padding-top: 0; }
+        html .oferta .uslugi .box .fas {
+          position: absolute;
+          top: 0;
+          left: -44px;
+          font-size: 2.3em;
+          color: #1F67AD;
+          text-shadow: -2px 4px rgba(168, 168, 168, 0.24); }
+        html .oferta .uslugi .box .inner-box {
+          background-color: rgba(41, 104, 174, 0.7);
+          position: absolute;
+          bottom: 4px;
+          left: 0;
+          width: 221px;
+          height: 130px; }
+          html .oferta .uslugi .box .inner-box p {
+            position: absolute;
+            top: 10px;
+            left: 9px;
+            line-height: 1.4em;
+            font-size: 0.905em;
+            color: #fdfffe; }
+  html .baner-o-nas {
+    background: url("../images/baner.png") no-repeat center;
+    text-align: center;
+    color: #fdfffe;
+    height: 280px;
+    position: relative; }
+    html .baner-o-nas p {
+      position: absolute;
+      display: block;
+      width: 500px;
+      line-height: 1.8em;
+      top: 38%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    html .baner-o-nas .button {
+      text-decoration: none;
+      color: #fdfffe;
+      background-color: #1F67AD;
+      padding: 10px 50px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 40px;
+      position: absolute;
+      left: 50%;
+      bottom: 18%;
+      transform: translate(-50%, -50%); }
+  html .o-nas {
+    display: flex;
+    flex-direction: row;
+    color: #707070;
+    height: 72vh; }
+    html .o-nas .photo-box {
+      flex-basis: 50%; }
+      html .o-nas .photo-box .photo-geo {
+        display: block;
+        max-width: 100%;
+        max-height: 100%; }
+    html .o-nas .opis {
+      flex-basis: 50%; }
+      html .o-nas .opis .opis-container {
+        width: 800px;
+        min-width: 200px;
+        padding: 120px 40px; }
+        html .o-nas .opis .opis-container h2 {
+          font-size: 1.8em;
+          color: #707070; }
+        html .o-nas .opis .opis-container hr {
+          width: 315px;
+          border: none;
+          height: 35px;
+          border-bottom: 2.5px solid #41ad16;
+          box-shadow: 0 10px 10px -10px #a8a8a8; }
+        html .o-nas .opis .opis-container h3 {
+          padding: 35px 0;
+          font-family: "Arimo", sans-serif;
+          font-size: 1em; }
+        html .o-nas .opis .opis-container p {
+          font-family: "Arimo", sans-serif;
+          padding-bottom: 8px; }
+        html .o-nas .opis .opis-container a {
+          margin-left: 380px;
+          text-decoration: none;
+          color: #fdfffe;
+          background-color: #1F67AD;
+          padding: 10px 50px;
+          border-radius: 4px;
+          display: inline-block;
+          margin-top: 40px; }
+  html .kontakt-form {
+    display: flex;
+    flex-direction: row;
+    color: #707070;
+    text-align: center; }
+  html .formularz {
+    flex-basis: 50%; }
+    html .formularz .container-form h2 {
+      font-size: 1.8em;
+      color: #707070;
+      padding-top: 120px;
+      padding-bottom: 60px; }
+    html .formularz .container-form input, html .formularz .container-form textarea {
+      font-size: 1em;
+      border: none;
+      border-bottom: solid 1px #c5c5c5;
+      padding: 10px 10px;
+      margin-bottom: 30px; }
+    html .formularz .container-form input {
+      width: 270px;
+      margin-right: 30px; }
+    html .formularz .container-form textarea {
+      width: 550px;
+      height: 40px;
+      max-height: 100px; }
+    html .formularz .container-form input[type=submit] {
+      background-color: #fdfffe;
+      border: solid 1px  #c5c5c5;
+      border-radius: 5px;
+      width: auto;
+      padding: 18px 55px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 40px; }
+  html .box-sec {
+    flex-basis: 50%; }
+    html .box-sec .tachi {
+      display: block;
+      max-width: 100%;
+      height: 100%; }
+  html .last {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 90px;
+    color: #707070;
+    position: relative;
+    overflow: hidden;
+    margin-top: -50px; }
+    html .last .poziom {
+      position: absolute;
+      top: -290px;
+      right: -600px;
+      z-index: -100;
+      opacity: 0.3;
+      transform: scale(0.8); }
+    html .last .container-map {
+      margin: 130px 0;
+      flex-basis: 50%; }
+    html .last .container-details {
+      flex-basis: 50%;
+      position: relative;
+      text-align: start; }
+      html .last .container-details .adres {
+        border-left: solid 1.5px #41ad16;
+        width: 500px;
+        height: 300px;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        padding: 80px 50px; }
+      html .last .container-details h2 {
+        padding-bottom: 15px; }
+      html .last .container-details a {
+        color: #707070; }
+      html .last .container-details p {
+        padding-top: 10px; }
+  html footer {
+    background-color: #153D6D;
+    color: #9CBADC;
+    font-family: "News Cycle", sans-serif; }
+    html footer .up {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 85%;
+      padding-top: 80px;
+      padding-bottom: 30px;
+      position: relative; }
+      html footer .up .logo-footer {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        transform: scale(0.9); }
+      html footer .up .dane-firmy {
+        padding-top: 60px; }
+        html footer .up .dane-firmy a {
+          color: #9CBADC; }
+        html footer .up .dane-firmy .adress, html footer .up .dane-firmy .phone, html footer .up .dane-firmy .mail {
+          display: flex;
+          flex-direction: row;
+          padding-top: 10px; }
+        html footer .up .dane-firmy .fas, html footer .up .dane-firmy .far {
+          font-size: 1.3em; }
+        html footer .up .dane-firmy .fa-phone-square {
+          transform: rotate(90deg);
+          font-size: 1.3em; }
+        html footer .up .dane-firmy p {
+          padding-left: 10px;
+          font-size: 0.95em; }
+      html footer .up .nav-footer ul {
+        list-style-type: none;
+        padding-top: 30px; }
+        html footer .up .nav-footer ul a {
+          color: #9CBADC; }
+          html footer .up .nav-footer ul a:hover {
+            color: #9CBADC;
+            text-decoration: line-through; }
+          html footer .up .nav-footer ul a li {
+            line-height: 1.6em;
+            font-size: 0.95em; }
+      html footer .up .media .fab {
+        padding: 30px 6px;
+        font-size: 1.3em; }
+    html footer .down {
+      text-align: center; }
+      html footer .down hr {
+        border: none;
+        display: block;
+        width: 70%;
+        height: 1px;
+        background-color: #9CBADC;
+        margin: 20px auto;
+        opacity: 0.2; }
+      html footer .down p {
+        padding-bottom: 20px;
+        font-size: 0.95em; }
