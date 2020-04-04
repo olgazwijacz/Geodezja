@@ -27,7 +27,7 @@ $(document).ready(function(){
       // Prevent default anchor click behavior
       event.preventDefault();
 
-      var hash = this.hash;
+   let hash = this.hash;
 
       $('html, body').animate({
         scrollTop: $(hash).offset().top
@@ -38,4 +38,39 @@ $(document).ready(function(){
     }
   });
 });
+
+// Mobile menu - Hamburger animation
+
+const navSlide =() => {
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.nav-list');
+const navLinks = document.querySelectorAll('.nav-list li');
+
+
+
+ hamburger.addEventListener('click', ()=>{
+
+//Toggle Nav
+
+  nav.classList.toggle('nav-active');
+
+// Toggle hamburger
+
+ hamburger.classList.toggle('toggle');
+
+
+//Animate Links
+   navLinks.forEach((link, index) => {
+    if(link.style.animation){
+      link.style.animation = ''
+    } else {
+     link.style.animation = `navLinkFade 0.3s ease forwards ${index / 7 + 0.17}s`;
+    }
+   
+ });
+});
+
+
+};
+navSlide();
 
