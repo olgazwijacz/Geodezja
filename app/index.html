@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     <div class="container">
-                    <h1>Usługi geodezyjne <br>na najwyższym poziomie</h1>  
+                    <h1 class="text-slide">Usługi geodezyjne <br>na najwyższym poziomie</h1>  
                     </div>
                 </div>
                 <img src="images/strzalka.png" alt="strzałka" class="arrow">
@@ -64,49 +64,49 @@
                 <hr>
             </div>
             <div class="uslugi">
-                <div class="box">
+                <div class="box a">
                     <i class="fas fa-angle-double-right"></i>
                     <img src="images/daniel-mccullough--FPFq_trr2Y-unsplash.png" alt="Photo by Daniel McCullough on Unsplash">
                     <div class="inner-box">
                         <p>Mapy do celów projektowych, geodezyjne pomiary sytuacyjno-wysokościowe</p>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box b">
                     <i class="fas fa-angle-double-right"></i>
                     <img src="images/scott-blake-sXASnaWglyY-unsplash.png " alt="Photo by Scott Blake on Unsplash">
                     <div class="inner-box">
                         <p>Tyczenie obiektów budowlanych i urządzeń  uzbrojenia terenu</p>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box c">
                     <i class="fas fa-angle-double-right"></i>
                     <img src="images/ahsan-s-CUTeHQGDaJ0-unsplash.png" alt="Photo by Ahsan S. on Unsplash">
                     <div class="inner-box">
                         <p>Geodezyjna inwentaryzacja powykonawcza obiektów budowlanych</p>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box d">
                     <i class="fas fa-angle-double-right"></i>
                     <img src="images/annie-spratt-Iqwnr00mfQM-unsplash.png" alt="Photo by Annie Spratt on Unsplash">
                     <div class="inner-box">
                         <p>Podziały nieruchomości</p>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box e">
                     <i class="fas fa-angle-double-right"></i>
                     <img src="images/utsman-media--LCkOaso6rg-unsplash.png" alt="Photo by Utsman Media on Unsplash">
                     <div class="inner-box">
                         <p>Ustalanie przebiegu granic, wznawianie oraz wyznaczanie punktów granicznych</p>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box f">
                     <i class="fas fa-angle-double-right"></i>
                     <img src="images/annie-spratt-Vqe3iOr4MUE-unsplash.png" alt="Photo by Annie Spratt on Unsplash">
                     <div class="inner-box">
                         <p>Rozgraniczenia nieruchomości</p>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box g">
                     <i class="fas fa-angle-double-right"></i>
                     <img src="images/helloquence-OQMZwNd3ThU-unsplash.png" alt="Photo by Helloquence on Unsplash">
                     <div class="inner-box">
@@ -115,14 +115,14 @@
                 </div>
                 <img src="images/arrow2.png" alt="strzałka" class="arrow2">
         </section>
-        <section class="baner-o-nas" >
+        <section class="baner-o-nas" id="o-nas">
             <div class="container-opis">
-                <p>Działamy szybko bo znamy się na tym co robimy. </p>
+                <p class="trigger">Działamy szybko bo znamy się na tym co robimy. </p>
                 <p> Zapewniamy niezawodną obsługę. <br> Sprawdź nas.</p>
                 <a class="button" href="tel:+48787150250" >Zadzwoń do nas</a>
             </div>
         </section>
-        <section class="o-nas" id="o-nas">
+        <section class="o-nas" >
             <div class="photo-box">
                <p> Image by SmartGeoPL from Pixabay</p>
             </div>
@@ -137,7 +137,7 @@
                     <p>Większość prac geodezyjnych mogą państwo zlecić telefonicznie bądź mailowo, w przypadku skomplikowanych zleceń zapraszamy do umówienie się na wizytę.</p>
                     <p>Zapraszamy do współpracy.</p>
 
-                    <a class="button" href="#kontakt">Kontakt</a>
+                    <a class="button trigger-sec" href="#kontakt">Kontakt</a>
                 </div>
             </div>
         </section>
@@ -147,20 +147,21 @@
                 <div class="container-form">
                     <h2>Skontaktuj się z nami</h2>
                     <form action="mail.php" name="contactform" method="post">
-                        <input type="text" name="name" placeholder="Twoje imię" id="name" required>
-                        <input type="email" name="email" placeholder="Twój adres email" id="mail" required>
+                        <input type="text" name="name" placeholder="Imię" id="name" required>
+                        <input type="email" name="email" placeholder="Email" id="mail" required>
                         <textarea name="message" placeholder="Zostaw wiadomość" id="message" required></textarea>
-                        <input type="submit" value="Wyślij" id="send">
+                        <input type="submit" value="Wyślij" id="send" class="sub">
                     </form>
                 </div>
             </div>
             <div class="box-sec">
-                <img src="images/green.png" class="tachi" alt="Designed by iconicbestiary / Freepik">
+                <img src="images/elipse.png" class="elipse" alt="elipse">
+                <img src="images/tachimetr.png" class="tachi" alt="Designed by iconicbestiary / Freepik">
             </div>
         </section>
         <section class="last">
             <div class="container-map">
-                <img src="images/Przechwytywanie.png" alt="mapa">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=14bXQ1gkFOan3qN811RH-N7H0n14DkpF5&z=15"></iframe>
             </div>
                 <div class="container-details">
                 <div class="adres">
@@ -222,8 +223,17 @@
             </section>
         </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/CSSRulePlugin.min.js.map" integrity="undefined" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js" integrity="sha256-3arngJBQR3FTyeRtL3muAGFaGcL8iHsubYOqq48mBLw=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha256-v/YsEqWkVsiNHryCWg+vjC/eDBakMAgOsCJRa0kNPOg=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha256-ABrLsV2caVEMCBfm3eNhv/CYQG+tGCqzw2f4b/Pag0M=" crossorigin="anonymous"></script>
 
+    
+        <script src="js/main.js"></script>
+        
 </div>
 </body>
 </html>

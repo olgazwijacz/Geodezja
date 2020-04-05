@@ -19,8 +19,10 @@ body {
     /* Extra Small Devices, Phones */
     /* Extra Small Devices, Phones */
     /* (768x1024) iPad 1 & 2, Portrait */
+    /* (768x1024) iPad 1 & 2, Portrait */
     /* Smartphones (landscape) ----------- */
-    /* Smartphones (portrait) ----------- */
+    /* (768x1024) iPad 1 & 2, Portrait */
+    /* Smartphones (landscape) ----------- */
     /* Small Devices, Tablets */ }
     body .body-wrapper header nav {
       min-height: 12vh;
@@ -223,6 +225,7 @@ body {
           top: 12vh;
           right: 0px;
           height: 88vh;
+          padding: 15% 0;
           font-size: 0.95em;
           background-color: #fdfffe;
           z-index: 100;
@@ -303,7 +306,8 @@ body {
     body .body-wrapper .oferta {
       margin: 0 auto;
       position: relative;
-      overflow: hidden; }
+      overflow: hidden;
+      padding-bottom: 3%; }
       body .body-wrapper .oferta .arrow2 {
         position: absolute;
         bottom: 4%;
@@ -325,7 +329,7 @@ body {
         width: 897px;
         height: 994px;
         opacity: 0.3;
-        transform: scale(0.94) rotate(-140deg); }
+        transform: rotate(-140deg); }
       body .body-wrapper .oferta .tytul {
         width: 80%;
         margin: 0 auto;
@@ -473,7 +477,7 @@ body {
       background: url("../images/baner.png") no-repeat center;
       text-align: center;
       color: #fdfffe;
-      height: 280px;
+      height: 290px;
       position: relative; }
       body .body-wrapper .baner-o-nas .container-opis {
         width: 370px;
@@ -523,7 +527,7 @@ body {
         body .body-wrapper .o-nas .photo-box p {
           display: none; }
       body .body-wrapper .o-nas .opis {
-        padding: 5% 2%;
+        padding: 7% 2%;
         flex-basis: 50%; }
         body .body-wrapper .o-nas .opis .opis-container {
           padding: 0 5%;
@@ -592,7 +596,7 @@ body {
           margin-top: 40px;
           margin-left: 60%;
           margin-top: 4%; } }
-    @media only screen and (min-width: 321px) and (max-device-width: 600px) and (orientation: portrait) {
+    @media only screen and (min-width: 320px) and (max-device-width: 600px) and (orientation: portrait) {
       body .body-wrapper .o-nas .photo-box {
         display: none; }
       body .body-wrapper .o-nas .opis {
@@ -617,71 +621,140 @@ body {
           margin-top: 40px;
           margin: 0 auto;
           margin-top: 4%; } }
-    @media only screen and (max-width: 320px) {
-      body .body-wrapper .o-nas .photo-box {
-        display: none; }
-      body .body-wrapper .o-nas .opis {
-        flex-basis: 100%;
-        padding: 7% 2%; }
-        body .body-wrapper .o-nas .opis .opis-container h2 {
-          font-size: 1.6em; }
-        body .body-wrapper .o-nas .opis .opis-container hr {
-          height: 25px;
-          width: 70%; }
-        body .body-wrapper .o-nas .opis .opis-container h3 {
-          padding: 20px 0; }
-        body .body-wrapper .o-nas .opis .opis-container p {
-          font-size: 0.9em; }
-        body .body-wrapper .o-nas .opis .opis-container .button {
-          text-decoration: none;
-          color: #fdfffe;
-          background-color: #1F67AD;
-          padding: 10px 50px;
-          border-radius: 4px;
-          display: inline-block;
-          margin-top: 40px;
-          margin: 0 auto;
-          margin-top: 4%; } }
     body .body-wrapper .kontakt-form {
       display: flex;
       flex-direction: row;
       color: #707070;
       text-align: center; }
-    body .body-wrapper .formularz {
-      flex-basis: 50%; }
-      body .body-wrapper .formularz .container-form h2 {
-        font-size: 1.8em;
-        color: #707070;
-        padding-top: 120px;
-        padding-bottom: 60px; }
-      body .body-wrapper .formularz .container-form input, body .body-wrapper .formularz .container-form textarea {
-        font-size: 1em;
-        border: none;
-        border-bottom: solid 1px #c5c5c5;
-        padding: 10px 10px;
-        margin-bottom: 30px; }
-      body .body-wrapper .formularz .container-form input {
-        width: 270px;
-        margin-right: 30px; }
-      body .body-wrapper .formularz .container-form textarea {
-        width: 550px;
-        height: 40px;
-        max-height: 100px; }
-      body .body-wrapper .formularz .container-form input[type=submit] {
-        background-color: #fdfffe;
-        border: solid 1px  #c5c5c5;
-        border-radius: 5px;
-        width: auto;
-        padding: 18px 55px;
-        display: block;
-        margin: 0 auto;
-        margin-top: 40px; }
-    body .body-wrapper .box-sec {
-      flex-basis: 50%; }
-      body .body-wrapper .box-sec .tachi {
-        display: block;
-        max-width: 100%;
-        height: 100%; }
+      body .body-wrapper .kontakt-form .formularz {
+        flex-basis: 45%; }
+        body .body-wrapper .kontakt-form .formularz .container-form h2 {
+          font-size: 1.8em;
+          color: #707070;
+          padding-top: 120px;
+          padding-bottom: 60px; }
+        body .body-wrapper .kontakt-form .formularz .container-form input, body .body-wrapper .kontakt-form .formularz .container-form textarea {
+          font-size: 1em;
+          border: none;
+          border-bottom: solid 1px #c5c5c5;
+          padding: 10px 10px;
+          margin-bottom: 30px; }
+        body .body-wrapper .kontakt-form .formularz .container-form input {
+          width: 270px;
+          margin: 15px; }
+        body .body-wrapper .kontakt-form .formularz .container-form textarea {
+          width: 480px;
+          height: 50px;
+          max-height: 100px; }
+        body .body-wrapper .kontakt-form .formularz .container-form input[type=submit] {
+          background-color: #fdfffe;
+          border: solid 1px  #c5c5c5;
+          border-radius: 5px;
+          width: auto;
+          padding: 18px 55px;
+          display: block;
+          margin: 0 auto;
+          margin-top: 40px; }
+      body .body-wrapper .kontakt-form .box-sec {
+        flex-basis: 55%;
+        background: url("../images/green2.png") no-repeat;
+        background-size: cover;
+        position: relative; }
+        body .body-wrapper .kontakt-form .box-sec .elipse {
+          display: block;
+          max-width: 100%;
+          height: auto;
+          margin: 0 auto;
+          transform: scale(0.8); }
+        body .body-wrapper .kontakt-form .box-sec .tachi {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%) scale(0.8); }
+    @media (max-width: 1680px) {
+      body .body-wrapper .kontakt-form .formularz {
+        flex-basis: 44%; }
+      body .body-wrapper .kontakt-form .box-sec {
+        flex-basis: 56%; } }
+    @media (max-width: 1440px) {
+      body .body-wrapper .kontakt-form .formularz {
+        flex-basis: 43.3%; }
+        body .body-wrapper .kontakt-form .formularz .container-form {
+          padding-top: 5%; }
+          body .body-wrapper .kontakt-form .formularz .container-form h2 {
+            font-size: 1.8em;
+            color: #707070;
+            padding-top: 20%;
+            padding-bottom: 10%; }
+          body .body-wrapper .kontakt-form .formularz .container-form input {
+            width: 30%;
+            margin-right: 30px; }
+          body .body-wrapper .kontakt-form .formularz .container-form textarea {
+            width: 60%;
+            height: 40px;
+            max-height: 100px;
+            max-width: 300px; }
+          body .body-wrapper .kontakt-form .formularz .container-form input[type=submit] {
+            padding: 2.5% 7%;
+            margin-top: 4%; }
+      body .body-wrapper .kontakt-form .box-sec {
+        flex-basis: 56.7%; }
+        body .body-wrapper .kontakt-form .box-sec .elipse {
+          transform: scale(0.7); }
+        body .body-wrapper .kontakt-form .box-sec .tachi {
+          transform: translate(-50%, -50%) scale(0.7); } }
+    @media only screen and (min-device-width: 667px) and (max-device-width: 1024px) and (orientation: portrait) {
+      body .body-wrapper .kontakt-form .formularz {
+        flex-basis: 100%; }
+        body .body-wrapper .kontakt-form .formularz .container-form h2 {
+          padding-top: 3%;
+          padding-bottom: 10%; }
+        body .body-wrapper .kontakt-form .formularz .container-form input {
+          width: 35%; }
+        body .body-wrapper .kontakt-form .formularz .container-form textarea {
+          margin-top: 20px; }
+        body .body-wrapper .kontakt-form .formularz .container-form input[type=submit] {
+          padding: 2.5% 6%;
+          margin-top: 3%; }
+      body .body-wrapper .kontakt-form .box-sec {
+        display: none; } }
+    @media only screen and (min-width: 320px) and (max-device-width: 600px) and (orientation: portrait) {
+      body .body-wrapper .kontakt-form .formularz {
+        flex-basis: 100%; }
+        body .body-wrapper .kontakt-form .formularz .container-form h2 {
+          padding-top: 10%;
+          padding-bottom: 13%;
+          font-size: 1.6em; }
+        body .body-wrapper .kontakt-form .formularz .container-form input {
+          width: 40%;
+          margin: 0 5px; }
+        body .body-wrapper .kontakt-form .formularz .container-form textarea {
+          margin-top: 20px; }
+        body .body-wrapper .kontakt-form .formularz .container-form input[type=submit] {
+          padding: 2.5% 6%;
+          margin-top: 3%; }
+      body .body-wrapper .kontakt-form .box-sec {
+        display: none; } }
+    @media only screen and (max-device-width: 667px) and (orientation: landscape) {
+      body .body-wrapper .kontakt-form .formularz {
+        flex-basis: 100%; }
+        body .body-wrapper .kontakt-form .formularz .container-form h2 {
+          padding-top: 10%;
+          padding-bottom: 13%;
+          font-size: 1.6em; }
+        body .body-wrapper .kontakt-form .formularz .container-form input {
+          width: 40%;
+          margin: 0 5px;
+          font-size: 0.95em; }
+        body .body-wrapper .kontakt-form .formularz .container-form textarea {
+          margin-top: 20px;
+          font-size: 0.95em; }
+        body .body-wrapper .kontakt-form .formularz .container-form input[type=submit] {
+          padding: 2.5% 6%;
+          margin-top: 3%; }
+      body .body-wrapper .kontakt-form .box-sec {
+        display: none; } }
     body .body-wrapper .last {
       display: flex;
       flex-direction: row;
@@ -694,13 +767,16 @@ body {
       body .body-wrapper .last .poziom {
         position: absolute;
         top: -290px;
-        right: -600px;
+        right: -660px;
         z-index: -100;
         opacity: 0.3;
         transform: scale(0.8); }
       body .body-wrapper .last .container-map {
         margin: 130px 0;
         flex-basis: 50%; }
+        body .body-wrapper .last .container-map iframe {
+          width: 640px;
+          height: 480px; }
       body .body-wrapper .last .container-details {
         flex-basis: 50%;
         position: relative;
@@ -720,6 +796,105 @@ body {
           color: #707070; }
         body .body-wrapper .last .container-details p {
           padding-top: 10px; }
+    @media screen and (max-width: 1440px) {
+      body .body-wrapper .last .poziom {
+        top: -400px;
+        right: -900px; }
+      body .body-wrapper .last .container-map {
+        flex-basis: 47%; }
+        body .body-wrapper .last .container-map iframe {
+          width: 450px;
+          height: 300px; }
+      body .body-wrapper .last .container-details {
+        flex-basis: 53%; }
+        body .body-wrapper .last .container-details .adres {
+          left: 50%; }
+        body .body-wrapper .last .container-details h2 {
+          padding-bottom: 15px; }
+        body .body-wrapper .last .container-details a {
+          color: #707070; }
+        body .body-wrapper .last .container-details p {
+          padding-top: 10px; } }
+    @media only screen and (min-device-width: 667px) and (max-device-width: 1024px) {
+      body .body-wrapper .last {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 2px; }
+        body .body-wrapper .last .poziom {
+          top: -250px;
+          right: -930px;
+          transform: rotate(30deg); }
+        body .body-wrapper .last .container-map {
+          display: none; }
+        body .body-wrapper .last .container-details {
+          display: block;
+          padding: 10% 10%;
+          text-align: start; }
+          body .body-wrapper .last .container-details .adres {
+            position: static;
+            top: unset;
+            left: unset;
+            transform: unset;
+            border-bottom: solid 1.5px #41ad16; }
+          body .body-wrapper .last .container-details h2 {
+            padding-bottom: 15px; }
+          body .body-wrapper .last .container-details a {
+            color: #707070; }
+          body .body-wrapper .last .container-details p {
+            padding-top: 10px; } }
+    @media only screen and (min-width: 320px) and (max-device-width: 600px) and (orientation: portrait) {
+      body .body-wrapper .last {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 2px; }
+        body .body-wrapper .last .poziom {
+          display: none; }
+        body .body-wrapper .last .container-map {
+          display: none; }
+        body .body-wrapper .last .container-details {
+          padding: unset;
+          text-align: center; }
+          body .body-wrapper .last .container-details .adres {
+            position: static;
+            top: unset;
+            left: unset;
+            transform: unset;
+            border: none;
+            width: 100%;
+            height: auto;
+            padding: 50px 20px; }
+          body .body-wrapper .last .container-details h2 {
+            font-size: 1.6em; }
+          body .body-wrapper .last .container-details p {
+            font-size: 0.9em; } }
+    @media only screen and (max-device-width: 667px) and (orientation: landscape) {
+      body .body-wrapper .last {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 2px; }
+        body .body-wrapper .last .poziom {
+          display: none; }
+        body .body-wrapper .last .container-map {
+          display: none; }
+        body .body-wrapper .last .container-details {
+          padding: unset;
+          text-align: center; }
+          body .body-wrapper .last .container-details .adres {
+            position: static;
+            top: unset;
+            left: unset;
+            transform: unset;
+            border: none;
+            width: 100%;
+            height: auto;
+            padding: 50px 20px; }
+          body .body-wrapper .last .container-details h2 {
+            font-size: 1.6em; }
+          body .body-wrapper .last .container-details p {
+            font-size: 0.9em; } }
     body .body-wrapper footer {
       background-color: #153D6D;
       color: #9CBADC;

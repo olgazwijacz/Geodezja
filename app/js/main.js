@@ -74,3 +74,147 @@ const navLinks = document.querySelectorAll('.nav-list li');
 };
 navSlide();
 
+
+
+// I ANIMATIONS
+
+// Main title animation
+
+TweenMax.from(".text-slide", 1.3, {
+  opacity: 0,
+  x:900,
+  ease: Expo.easeInOut,
+  }, 0.08);
+
+
+// Servises single box animation
+
+
+const tl = new TimelineMax();
+const controller = new ScrollMagic.Controller();
+tl.from(".tytul", 0.4, {x:300, opacity:0})
+tl.from(".a", 0.3, {x:-70, opacity:0})
+tl.from(".b", 0.3, {x:-70, opacity:0})
+tl.from(".c", 0.3, {x:-70, opacity:0})
+tl.from(".d", 0.3, {x:-70, opacity:0})
+tl.from(".e", 0.3, {x:-70, opacity:0})
+tl.from(".f", 0.3, {x:-70, opacity:0})
+tl.from(".g", 0.3, {x:-70, opacity:0})
+tl.from(".arrow2", {x:-70, opacity:0})
+
+const scene = new ScrollMagic.Scene({
+    triggerElement:".uslugi",
+    offset: -250,
+})
+.setTween(tl)
+.addTo(controller)
+
+const tl2 = new TimelineMax();
+const controller2 = new ScrollMagic.Controller();
+
+
+
+tl2.from(".baner-o-nas", .4,  {opacity:0, ease: Expo.easeInOut},"=0.30" )
+
+const scene2 = new ScrollMagic.Scene({
+    triggerElement:".arrow2",
+
+    offset:140,
+})
+.setTween(tl2)
+.addTo(controller2)
+
+
+const tl3 = new TimelineMax();
+const controller3 = new ScrollMagic.Controller();
+
+tl3.from(".o-nas", .5,  {opacity:0, ease: Expo.easeInOut}, "=0.65" )
+
+const scene3 = new ScrollMagic.Scene({
+    triggerElement:".baner-o-nas",
+    offset:300,
+    
+})
+.setTween(tl3)
+.addTo(controller3)
+
+
+const tl4= new TimelineMax();
+const controller4 = new ScrollMagic.Controller();
+
+tl4.from(".formularz", .6,  {opacity:0, ease: Expo.easeInOut},"=0.33" )
+.from(".box-sec", .6, {opacity:0, x: 500, ease: Expo.easeInOut})
+
+const scene4= new ScrollMagic.Scene({
+    triggerElement:".trigger-sec",
+    offset: 50
+ 
+})
+.setTween(tl4)
+.addTo(controller4)
+
+
+
+
+const tl5= new TimelineMax();
+const controller5 = new ScrollMagic.Controller();
+
+tl5.from(".container-map", .5,  {opacity:0, scale:0, ease: Expo.easeInOut},"=0.2" )
+.from(".container-details", .6, {opacity:0, x: 500, ease: Expo.easeInOut})
+
+const scene5= new ScrollMagic.Scene({
+    triggerElement:".sub",
+    offset: 50
+ 
+})
+.setTween(tl5)
+.addTo(controller5)
+
+
+
+
+const tl6 = new TimelineMax();
+const controller6 = new ScrollMagic.Controller();
+tl6.from(".logo-footer",.5 , { delay: .5, opacity: 0, x:-500, ease: Expo.easeInOut}, 0.08)
+.from(".ukryty-tytul", .5, { delay: .5, opacity: 0, x:-500, ease: Expo.easeInOut}, 0.08)
+.from(".nav-footer h3", .5, { delay:  .5, opacity: 0, x:-500, ease: Expo.easeInOut}, 0.08)
+.from(".media h3 ", .5 ,{ delay:  .5, opacity: 0, x:-500, ease: Expo.easeInOut}, 0.08)
+
+const scene6 = new ScrollMagic.Scene({
+    triggerElement:".container-details .adres",
+    offset: 200
+
+})
+.setTween(tl6)
+.addTo(controller6)
+.addIndicators()
+
+
+
+
+
+
+// II ANIMATIONS FOR MEDIA QUERIES
+
+
+
+const textSlideLeft = document.querySelectorAll(".text-slide")
+if (window.matchMedia("(min-width: 992px)").matches) {
+     
+
+// Menu li animation
+
+TweenMax.from(".nav-list", 1.3, {
+
+  opacity: 0,
+  x:-900,
+  ease: Expo.easeInOut,
+  }, 0.08);
+
+
+
+}
+
+
+
+
