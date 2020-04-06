@@ -28,16 +28,13 @@ body{
                 width: 207px;
                 height: 119px;
                 transform: scale(0.9);
-                
-                }
-                .logo-sm{
-                    display: none;
                 }
                 .nav-list{
                     width: 40%;
                     display: flex;
                     list-style-type: none;
                     justify-content: space-between;
+                    padding-top: 1%;
                     li{
                     display: inline-block;
                     a{
@@ -98,7 +95,7 @@ body{
                 }
                 .left{
                     font-size: 1.2em;
-                    background: url("../images/agriculture.png")  no-repeat;
+                    background: url("../images/header-left.jpg")  no-repeat;
                     background-size: cover;
                     flex-basis: 50%;
                     text-align: center;
@@ -120,7 +117,7 @@ body{
                     }
                 }
                 .right{
-                    background: url("../images/ge.png") no-repeat;
+                    background: url("../images/header-right.jpg") no-repeat;
                     background-size: cover;
                     flex-basis: 50%;
                     .fast-contact{
@@ -298,13 +295,10 @@ body{
                 header{
                     position: relative;
                     nav{
+                        width: 100%;
                         .logo-lg{
-                        display: none;
-                        }
-                        .logo-sm{
-                            display: block;
-                            width: 50px;
-                            height: 78px;
+                            width: 150px;
+                            height: 100px;
                         }
                         .nav-list{
                             position: absolute;
@@ -319,35 +313,20 @@ body{
                             align-items: center;
                             justify-content: space-around;
                             width: 40%;
-                            -webkit-box-shadow: -9px 0px 12px 0px rgba(44, 50, 50, 0.15);
-                            -moz-box-shadow:    -9px 0px 12px 0px rgba(44, 50, 50, 0.15);
-                            box-shadow:         -9px 0px 12px 0px rgba(44, 50, 50, 0.15);
                             transform: translateX(100%);
-                            transition: tranform 0.5s ease-in;
+                            transition: transform 0.5s ease-in;
                                 li{
-                                    opacity: 0;
-                                        .fa-search{
-                                           display: none;
-                                            }
+                                    opacity: 1;
                                         }
-                                        
                                     }
                         .hamburger{
                             display: block;
                             cursor: pointer;
+                            padding-top: 4%;
+                            padding-right: 20px;
                         }
                         .nav-active{
                             transform: translate(0%);
-                        }
-                        @keyframes navLinkFade{
-                            from{
-                                opacity:0;
-                                transform: translateX(40px);
-                            }
-                            to{
-                                opacity:1;
-                                transform: translateX(0px);
-                            }
                         }
                         .toggle {
                             .line1{
@@ -458,7 +437,7 @@ body{
             margin: 0 auto;
             position: relative;
             overflow: hidden;
-            padding-bottom: 3%;
+          
             .arrow2{
                 position: absolute;
                 bottom: 4%;
@@ -701,10 +680,10 @@ body{
         
     // BANER PRZED SEKCJĄ "O NAS"
         .baner-o-nas{
-            background: url("../images/baner.png") no-repeat center;
+            background: url("../images/baner.jpg") no-repeat center;
             text-align: center;
             color: $secondary-color;
-            height: 290px;
+            height: 260px;
             position: relative;
             .container-opis{
                  width: 370px;
@@ -715,8 +694,10 @@ body{
                 -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
               
-                p{
+                h5{
                     line-height: 1.8em;
+                    font-size: 0.95em;
+                    font-weight: 100;
                 
                 }
             .button{
@@ -734,7 +715,7 @@ body{
             .container-opis{
                 width: 290px; 
                 font-size: 0.9em;
-            p{
+            h5{
                 line-height: 1.5em;
                 padding: 0 5%;
             }
@@ -746,17 +727,14 @@ body{
         }
     }
 }
-
         // SEKCJA O NAS
 
         .o-nas{
             display: flex;
             flex-direction: row;
             color:$tetrairy-color;
-         
-        
             .photo-box{
-                background: url("../images/geo.png") no-repeat;
+                background: url("../images/o-nas-left.jpg") no-repeat;
                 background-size: cover;
                 flex-basis: 50%;
              p{
@@ -784,11 +762,18 @@ body{
                     padding: 35px 0;
                     font-family: $basic-font;
                     font-size: 1em;
+                    span{
+                        color: #252525;
+                    }
                         }
                 p{
                     font-family:$basic-font;
                     padding-bottom: 8px;
                         }
+                    h4{
+                        color: #424242;
+                        padding-bottom: 8px;
+                    }
                 .button{
                         @include button;
                         margin-left: 60%;
@@ -797,7 +782,7 @@ body{
                 }
             }
         }
-        
+    
 /* (768x1024) iPad 1 & 2, Portrait */
     @media only screen and (min-device-width: 600px) and (max-device-width: 1024px) and (orientation: portrait) {
         .o-nas{
@@ -930,7 +915,7 @@ body{
         }
         .box-sec{
             flex-basis: 55%;
-            background: url("../images/green2.png")   no-repeat;
+            background: url("../images/shape-b.png")   no-repeat;
             background-size: cover;
             position: relative;
      
@@ -1306,9 +1291,11 @@ body{
                 }
                 .logo-footer{
                     position: absolute;
-                    top:20px;
-                    left:0;
-                    transform: scale(0.9);
+                    top:15px;
+                    left:-25px;
+                    transform: scale(0.8);
+                    width: 207px;
+                    height: 119px;
                 }
                 .dane-firmy{
                     padding-top: 60px;
@@ -1369,7 +1356,7 @@ body{
                     margin: 20px auto;
                     opacity: 0.2;
                 }
-                p{
+                h6{
                 padding-bottom: 20px;
                 font-size: 0.95em;
                 }

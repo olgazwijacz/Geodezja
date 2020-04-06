@@ -39,13 +39,12 @@ body {
         width: 207px;
         height: 119px;
         transform: scale(0.9); }
-      body .body-wrapper header nav .logo-sm {
-        display: none; }
       body .body-wrapper header nav .nav-list {
         width: 40%;
         display: flex;
         list-style-type: none;
-        justify-content: space-between; }
+        justify-content: space-between;
+        padding-top: 1%; }
         body .body-wrapper header nav .nav-list li {
           display: inline-block; }
           body .body-wrapper header nav .nav-list li a {
@@ -97,7 +96,7 @@ body {
         z-index: 1; }
       body .body-wrapper header .baner .left {
         font-size: 1.2em;
-        background: url("../images/agriculture.png") no-repeat;
+        background: url("../images/header-left.jpg") no-repeat;
         background-size: cover;
         flex-basis: 50%;
         text-align: center; }
@@ -119,7 +118,7 @@ body {
             display: inline-block;
             margin-top: 40px; }
       body .body-wrapper header .baner .right {
-        background: url("../images/ge.png") no-repeat;
+        background: url("../images/header-right.jpg") no-repeat;
         background-size: cover;
         flex-basis: 50%; }
         body .body-wrapper header .baner .right .fast-contact {
@@ -214,52 +213,41 @@ body {
     @media only screen and (max-width: 992px) {
       body .body-wrapper header {
         position: relative; }
-        body .body-wrapper header nav .logo-lg {
-          display: none; }
-        body .body-wrapper header nav .logo-sm {
-          display: block;
-          width: 50px;
-          height: 78px; }
-        body .body-wrapper header nav .nav-list {
-          position: absolute;
-          top: 12vh;
-          right: 0px;
-          height: 88vh;
-          padding: 15% 0;
-          font-size: 0.95em;
-          background-color: #fdfffe;
-          z-index: 100;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-around;
-          width: 40%;
-          -webkit-box-shadow: -9px 0px 12px 0px rgba(44, 50, 50, 0.15);
-          -moz-box-shadow: -9px 0px 12px 0px rgba(44, 50, 50, 0.15);
-          box-shadow: -9px 0px 12px 0px rgba(44, 50, 50, 0.15);
-          transform: translateX(100%);
-          transition: tranform 0.5s ease-in; }
-          body .body-wrapper header nav .nav-list li {
+        body .body-wrapper header nav {
+          width: 100%; }
+          body .body-wrapper header nav .logo-lg {
+            width: 150px;
+            height: 100px; }
+          body .body-wrapper header nav .nav-list {
+            position: absolute;
+            top: 12vh;
+            right: 0px;
+            height: 88vh;
+            padding: 15% 0;
+            font-size: 0.95em;
+            background-color: #fdfffe;
+            z-index: 100;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: 40%;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in; }
+            body .body-wrapper header nav .nav-list li {
+              opacity: 1; }
+          body .body-wrapper header nav .hamburger {
+            display: block;
+            cursor: pointer;
+            padding-top: 4%;
+            padding-right: 20px; }
+          body .body-wrapper header nav .nav-active {
+            transform: translate(0%); }
+          body .body-wrapper header nav .toggle .line1 {
+            transform: rotate(-45deg) translate(-5px, 6px); }
+          body .body-wrapper header nav .toggle .line2 {
             opacity: 0; }
-            body .body-wrapper header nav .nav-list li .fa-search {
-              display: none; }
-        body .body-wrapper header nav .hamburger {
-          display: block;
-          cursor: pointer; }
-        body .body-wrapper header nav .nav-active {
-          transform: translate(0%); }
-      @keyframes navLinkFade {
-        from {
-          opacity: 0;
-          transform: translateX(40px); }
-        to {
-          opacity: 1;
-          transform: translateX(0px); } }
-        body .body-wrapper header nav .toggle .line1 {
-          transform: rotate(-45deg) translate(-5px, 6px); }
-        body .body-wrapper header nav .toggle .line2 {
-          opacity: 0; }
-        body .body-wrapper header nav .toggle .line3 {
-          transform: rotate(45deg) translate(-4px, -5px); } }
+          body .body-wrapper header nav .toggle .line3 {
+            transform: rotate(45deg) translate(-4px, -5px); } }
     @media only screen and (max-width: 768px) and (orientation: portrait) {
       body .body-wrapper header .baner .shape {
         right: -250px;
@@ -306,8 +294,7 @@ body {
     body .body-wrapper .oferta {
       margin: 0 auto;
       position: relative;
-      overflow: hidden;
-      padding-bottom: 3%; }
+      overflow: hidden; }
       body .body-wrapper .oferta .arrow2 {
         position: absolute;
         bottom: 4%;
@@ -474,10 +461,10 @@ body {
         body .body-wrapper .oferta .arrow2 {
           right: initial; } }
     body .body-wrapper .baner-o-nas {
-      background: url("../images/baner.png") no-repeat center;
+      background: url("../images/baner.jpg") no-repeat center;
       text-align: center;
       color: #fdfffe;
-      height: 290px;
+      height: 260px;
       position: relative; }
       body .body-wrapper .baner-o-nas .container-opis {
         width: 370px;
@@ -487,8 +474,10 @@ body {
         top: 50%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%); }
-        body .body-wrapper .baner-o-nas .container-opis p {
-          line-height: 1.8em; }
+        body .body-wrapper .baner-o-nas .container-opis h5 {
+          line-height: 1.8em;
+          font-size: 0.95em;
+          font-weight: 100; }
         body .body-wrapper .baner-o-nas .container-opis .button {
           text-decoration: none;
           color: #fdfffe;
@@ -503,7 +492,7 @@ body {
       body .body-wrapper .baner-o-nas .container-opis {
         width: 290px;
         font-size: 0.9em; }
-        body .body-wrapper .baner-o-nas .container-opis p {
+        body .body-wrapper .baner-o-nas .container-opis h5 {
           line-height: 1.5em;
           padding: 0 5%; }
         body .body-wrapper .baner-o-nas .container-opis .button {
@@ -521,7 +510,7 @@ body {
       flex-direction: row;
       color: #707070; }
       body .body-wrapper .o-nas .photo-box {
-        background: url("../images/geo.png") no-repeat;
+        background: url("../images/o-nas-left.jpg") no-repeat;
         background-size: cover;
         flex-basis: 50%; }
         body .body-wrapper .o-nas .photo-box p {
@@ -549,8 +538,13 @@ body {
             padding: 35px 0;
             font-family: "Arimo", sans-serif;
             font-size: 1em; }
+            body .body-wrapper .o-nas .opis .opis-container h3 span {
+              color: #252525; }
           body .body-wrapper .o-nas .opis .opis-container p {
             font-family: "Arimo", sans-serif;
+            padding-bottom: 8px; }
+          body .body-wrapper .o-nas .opis .opis-container h4 {
+            color: #424242;
             padding-bottom: 8px; }
           body .body-wrapper .o-nas .opis .opis-container .button {
             text-decoration: none;
@@ -657,7 +651,7 @@ body {
           margin-top: 40px; }
       body .body-wrapper .kontakt-form .box-sec {
         flex-basis: 55%;
-        background: url("../images/green2.png") no-repeat;
+        background: url("../images/shape-b.png") no-repeat;
         background-size: cover;
         position: relative; }
         body .body-wrapper .kontakt-form .box-sec .elipse {
@@ -912,9 +906,11 @@ body {
           display: none; }
         body .body-wrapper footer .up .logo-footer {
           position: absolute;
-          top: 20px;
-          left: 0;
-          transform: scale(0.9); }
+          top: 15px;
+          left: -25px;
+          transform: scale(0.8);
+          width: 207px;
+          height: 119px; }
         body .body-wrapper footer .up .dane-firmy {
           padding-top: 60px; }
           body .body-wrapper footer .up .dane-firmy a {
@@ -955,7 +951,7 @@ body {
           background-color: #9CBADC;
           margin: 20px auto;
           opacity: 0.2; }
-        body .body-wrapper footer .down p {
+        body .body-wrapper footer .down h6 {
           padding-bottom: 20px;
           font-size: 0.95em; }
     @media only screen and (max-width: 768px) {

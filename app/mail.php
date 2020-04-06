@@ -1,5 +1,5 @@
 <?php
-$to      = 'olgazwijacz@gmail.com';
+$to      = 'geodezjastrama@gmail.com';
 $name = $_POST['name'];
 $email = $_POST['email'];
 $subject = 'Natalka! ' . $name . ' chce o coś zapytać. Odpisz szybko!';
@@ -8,9 +8,12 @@ $headers =  'From:' . $name . "\r\n" .
     'Reply-To:' .  $email . "\r\n";
 $headers .= 'Content-Type: text/plain; charset=utf-8' . "\r\n";
 $locationpage = "index.html";
-header("Location: $locationpage?message=Wyslano");
+header("Location: $locationpage?message=wyslano");
 
     mail($to, $subject, $message, $headers)
 
+
+      
+    
 
  ?>
